@@ -2644,6 +2644,7 @@ input, select, textarea {
 
 			.image.main img {
 				width: 100%;
+                clip: rect(0px,500px,500px,0px);
 			}
 
 		@media screen and (max-width: 736px) {
