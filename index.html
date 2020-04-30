@@ -5,7 +5,8 @@
 		<title>Swapnanil Jana</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--<link rel="stylesheet" href="assets/css/main.css" />-->
+        <link rel="stylesheet" id="stylesheet" type="text/css" href="assets/css/main.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -209,6 +210,7 @@ Just a short question, would you be able to burn her goals, her talents, her cap
 					<div id="copyright">
 						<ul><li>&copy; Swapnanil Jana</li><li>Created By: <a href="https://abhishekadhikari23.github.io">Abhishek Adhikari</a></li></ul>
 					</div>
+                <img src="images/bulb1.png" height = "72px" id="fixedbutton" class="float" onclick="toggle()">
 
 			</div>
 
@@ -225,6 +227,27 @@ Just a short question, would you be able to burn her goals, her talents, her cap
             return false;
             });
         </script>
+        <!--<script>
+            function myFunction() {
+                var element = document.getElementById("wrapper");
+                element.classList.toggle("bg-dark");
+                element.getch
+                }
 
+        </script>-->
+        <script>
+            function toggle(){
+                console.log(document.getElementById('stylesheet').getAttribute("href"));
+                var stylesheet = document.getElementById('stylesheet');
+                if(stylesheet.getAttribute("href")=='assets/css/main.css')
+                    {
+                        stylesheet.href='assets/css/main-dark.css';
+                    }
+                else if(stylesheet.getAttribute("href")=='assets/css/main-dark.css'){
+                    stylesheet.setAttribute('href', 'assets/css/main.css');
+                }
+            }
+        </script>
+        
 	</body>
 </html>

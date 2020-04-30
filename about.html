@@ -9,7 +9,7 @@
 		<title>Abot Me - Swapnanil Jana</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" id="stylesheet" type="text/css" href="assets/css/main.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -482,6 +482,8 @@ print 'It took ' + i + ' iterations to sort the deck.';
 					<div id="copyright">
 						<ul><li>&copy; Swapnanil Jana</li><li>Created By: <a href="https://abhishekadhikari23.github.io">Abhishek Adhikari</a></li></ul>
 					</div>
+                <img src="images/bulb1.png" height = "72px" id="fixedbutton" class="float" onclick="toggle()">
+
 
 			</div>
 
@@ -498,6 +500,19 @@ print 'It took ' + i + ' iterations to sort the deck.';
                 return false;
                 });
             </script>
+        <script>
+            function toggle(){
+                console.log(document.getElementById('stylesheet').getAttribute("href"));
+                var stylesheet = document.getElementById('stylesheet');
+                if(stylesheet.getAttribute("href")=='assets/css/main.css')
+                    {
+                        stylesheet.href='assets/css/main-dark.css';
+                    }
+                else if(stylesheet.getAttribute("href")=='assets/css/main-dark.css'){
+                    stylesheet.setAttribute('href', 'assets/css/main.css');
+                }
+            }
+        </script>
 
 	</body>
 </html>
