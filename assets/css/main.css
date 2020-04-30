@@ -99,6 +99,7 @@ input, select, textarea {
 	}
 
 	body {
+        background-image: url("arts\back.jpg")
 		background-color: #1e252d;
 	}
 
