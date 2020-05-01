@@ -2323,6 +2323,7 @@ input, select, textarea {
 		font-size: 0.8rem;
 		text-transform: uppercase;
 		margin: 0 0 0.75rem 0;
+        color: black;
 	}
 
 		@media screen and (max-width: 980px) {
@@ -4390,7 +4391,7 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
+		color: rgba(255, 255, 255, 0.75);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
@@ -4501,7 +4502,7 @@ input, select, textarea {
 		top: 0.75rem;
 		right: 0.75rem;
 		border: 0;
-		color: #ffffff;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.9rem;
 		font-weight: 900;
@@ -4588,7 +4589,7 @@ input, select, textarea {
 		}
 
 			#navPanel .links li {
-				border-top: solid 2px #eeeeee;
+				border-top: solid 2px #000000;
 			}
 
 				#navPanel .links li a {
@@ -4600,6 +4601,7 @@ input, select, textarea {
 					font-weight: 900;
 					letter-spacing: 0.075em;
 					padding: 0.75rem 0;
+                    color: #000000;
 					text-transform: uppercase;
 				}
 
@@ -4700,7 +4702,7 @@ input, select, textarea {
 	height:50px;
 	bottom:1vw;
 	right:1vw;
-	background-color:red;
+	background-color: darkred;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
